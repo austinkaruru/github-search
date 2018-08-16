@@ -7,6 +7,8 @@ import { GithubFormComponent } from "./github-form/github-form.component";
 import { GithubComponent } from "./github/github.component";
 import { AboutComponent } from "./about/about.component";
 import { HttpClientModule } from "@angular/common/http";
+import { NgProgressModule } from "@ngx-progressbar/core";
+import { NgProgressHttpModule } from "@ngx-progressbar/http";
 
 const routes: Routes = [{ path: "about", component: AboutComponent }];
 
@@ -21,7 +23,9 @@ const routes: Routes = [{ path: "about", component: AboutComponent }];
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    NgProgressModule.forRoot(),
+    NgProgressHttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
