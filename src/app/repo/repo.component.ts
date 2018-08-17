@@ -11,14 +11,8 @@ export class RepoComponent implements OnInit {
   constructor(private http: HttpClient) {}
 
   ngOnInit() {
-    interface ApiResponse {
-      id: number;
-      name: string;
-    }
     this.http
-      .get<ApiResponse>("https://api.github.com/users/austinkaruru/repos")
-      .subscribe(data => {
-        this.repo = new Repo(data.id, data.name);
-      });
+      .get("https://api.github.com/users/austinkaruru/repos")
+      .subscribe(data => {});
   }
 }
