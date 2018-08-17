@@ -1,13 +1,12 @@
 <ng-progress></ng-progress>
-<h1>{{ title }}!</h1>
-<h1>
-  <em>{{github.login}}</em>
-</h1>
-<!-- <img src="https://avatars0.githubusercontent.com/u/40546311?v=4"> -->
-<img src="{{github.avatar_url}}">
-<ul>
-  <li>{{github.repos_url}}</li>
-</ul>
-
-
 <app-github-form></app-github-form>
+<h1>{{ title }}!</h1>
+<div class="me">
+  <div class="jumbotron">
+    <img src="{{github.avatar_url}}">
+    <h1>
+      <em>{{github.login}}</em>
+    </h1>
+  </div>
+  {{github.repos_url}}
+</div>

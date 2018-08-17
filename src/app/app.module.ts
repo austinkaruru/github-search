@@ -9,15 +9,20 @@ import { AboutComponent } from "./about/about.component";
 import { HttpClientModule } from "@angular/common/http";
 import { NgProgressModule } from "@ngx-progressbar/core";
 import { NgProgressHttpModule } from "@ngx-progressbar/http";
+import { RepoComponent } from './repo/repo.component';
 
-const routes: Routes = [{ path: "about", component: AboutComponent }];
+const routes: Routes = [
+  { path: "about", component: AboutComponent },
+  { path: "repos_url", component: GithubComponent }
+];
 
 @NgModule({
   declarations: [
     AppComponent,
     GithubFormComponent,
     GithubComponent,
-    AboutComponent
+    AboutComponent,
+    RepoComponent
   ],
   imports: [
     BrowserModule,
