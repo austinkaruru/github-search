@@ -26,11 +26,11 @@ export class GithubComponent implements OnInit {
         "https://api.github.com/users/austinkaruru?api_key=07b371a160a752a3d16958a304f48cc07398f603"
       )
       .subscribe(data => {
-        console.log(data);
-        for (let i = 0; i < data.data.length; i++) {
-          this.githubs.push(data.data[i]);
-        }
-        // this.github = new Github(data.login, data.avatar_url, data.repos_url);
+        // console.log(data);
+        //  for (let i = 0; i < data.data.length; i++) {
+        //    this.githubs.push(data.data[i]);
+        // }
+        this.github = new Github(data.login, data.avatar_url, data.repos_url);
       });
   }
 }

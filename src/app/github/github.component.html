@@ -1,12 +1,13 @@
 <ng-progress></ng-progress>
-<h1>{{ title }}!
+<h1>{{ title }}!</h1>
+<h1>
+  <em>{{github.login}}</em>
 </h1>
-<blockquote class="text-center text-lg">
-  <p>{{github.login}}</p>
-  {{github.image}}
-  <ul>
-    <li>{{github.repo}}</li>
-  </ul>
-</blockquote>
+<!-- <img src="https://avatars0.githubusercontent.com/u/40546311?v=4"> -->
+<img src="{{github.avatar_url}}">
+<ul>
+  <li>{{github.repos_url}}</li>
+</ul>
+
 
 <app-github-form></app-github-form>
