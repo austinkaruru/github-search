@@ -1,7 +1,7 @@
 # Author: `Austin Karuru`
 
 # Description
-#### This is an application where users can create quotes and have those quotes voted on whether they are terrible or are inspirational. 
+#### This is an application where users can display their github profiles, and search pther users and their repositories.
 #### This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.2.
 
 # Tools used To Develop
@@ -19,5 +19,5 @@
 #### The app is yet to be complete. Any useful advice would be greatly appreciated. Email me @karuruaustine@gmail.com 
 ## Further help
 ### To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-## Check it out : <a href="https://austinkaruru.github.io/quote-ip/">quote-ip</a>
-## This project is licensed under the MIT <a href="https://github.com/austinkaruru/quote-ip/blob/master/LICENSE">License</a> Copyright (c) 2018 <a href="https://github.com/austinkaruru">austinkaruru</a>
+## Check it out : <a href="https://austinkaruru.github.io/github-search/">quote-ip</a>
+## This project is licensed under the MIT <a href="https://github.com/austinkaruru/github-search/blob/master/LICENSE">License</a> Copyright (c) 2018 <a href="https://github.com/austinkaruru">austinkaruru</a>
