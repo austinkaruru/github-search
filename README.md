@@ -7,7 +7,7 @@
 # Tools used To Develop
 ##### Angular 6
 ##### Bootstrap 4
-##### HTML
+##### HTML5
 ##### CSS
 
 # Requirements for Running
