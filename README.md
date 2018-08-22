@@ -1,7 +1,7 @@
 # Author: `Austin Karuru`
 
 # Description
-#### This is an application where users can display their github profiles, and search pther users and their repositories.
+#### This is an application where users can display their github profiles, and search other users and their repositories.
 #### This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.2.
 
 # Tools used To Develop
