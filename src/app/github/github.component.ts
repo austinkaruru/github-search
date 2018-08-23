@@ -29,7 +29,7 @@ export class GithubComponent implements OnInit {
         // for (let i = 0; i < data.data.length; i++) {
         //   this.githubs.push(data.data[i]);
         // }
-        this.github = new Github(data.login, data.avatar_url, data.repos_url);
+        // this.github = new Github(data.login, data.avatar_url, data.repos_url);
       });
   }
 }
