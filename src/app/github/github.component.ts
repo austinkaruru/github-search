@@ -18,16 +18,17 @@ export class GithubComponent implements OnInit {
     interface ApiResponse {
       login: string;
       avatar_url: string;
+      repos_url: string;
     }
     this.http
       .get<ApiResponse>(
-        "https://api.github.com/users/austinkaruru?api_key=07b371a160a752a3d16958a304f48cc07398f603"
+        "https://api.github.com/users/austinkaruru?api_key=8eac2bdfaad9ae260bd8289a09f39a8cafc4ae6e"
       )
       .subscribe(data => {
         console.log(data);
-        for (let i = 0; i < data.data.length; i++) {
-          this.githubs.push(data.data[i]);
-        }
+        // for (let i = 0; i < data.data.length; i++) {
+        //   this.githubs.push(data.data[i]);
+        // }
         this.github = new Github(data.login, data.avatar_url, data.repos_url);
       });
   }
