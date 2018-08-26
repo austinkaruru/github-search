@@ -11,6 +11,7 @@ import { NgProgressModule } from "@ngx-progressbar/core";
 import { NgProgressHttpModule } from "@ngx-progressbar/http";
 import { RepoComponent } from "./repo/repo.component";
 import { NotFoundComponent } from "./not-found/not-found.component";
+import { RoutingModule } from "./routing/routing.module";
 
 const routes: Routes = [
   { path: "about", component: AboutComponent },
@@ -32,6 +33,7 @@ const routes: Routes = [
     BrowserModule,
     FormsModule,
     HttpClientModule,
+    RoutingModule,
     RouterModule.forRoot(routes),
     NgProgressModule.forRoot(),
     NgProgressHttpModule
