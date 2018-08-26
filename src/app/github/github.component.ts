@@ -12,6 +12,8 @@ import { RepoService } from "../repos/repo.service";
 export class GithubComponent implements OnInit {
   title = "Search";
 
+  github: Github;
+
   constructor(private http: HttpClient) {}
 
   ngOnInit() {
@@ -29,7 +31,7 @@ export class GithubComponent implements OnInit {
         // for (let i = 0; i < data.data.length; i++) {
         //   this.github.push(data[i]);
         // }
-        // this.data = new Github(data.login, data.avatar_url, data.repos_url);
+        this.github = new Github(data.login, data.avatar_url, data.repos_url);
       });
   }
 }
