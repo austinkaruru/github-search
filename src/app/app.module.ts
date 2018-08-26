@@ -10,6 +10,7 @@ import { HttpClientModule } from "@angular/common/http";
 import { NgProgressModule } from "@ngx-progressbar/core";
 import { NgProgressHttpModule } from "@ngx-progressbar/http";
 import { RepoComponent } from './repo/repo.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 const routes: Routes = [
   { path: "about", component: AboutComponent },
@@ -22,7 +23,8 @@ const routes: Routes = [
     GithubFormComponent,
     GithubComponent,
     AboutComponent,
-    RepoComponent
+    RepoComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
