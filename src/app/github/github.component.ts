@@ -1,12 +1,12 @@
 import { Component, OnInit } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
 import { Github } from "../github-class/github";
-import { RepoService } from "../repos/repo.service";
+// import { GithubService } from "../github/github.service";
 
 @Component({
   selector: "app-github",
   templateUrl: "./github.component.html",
-  providers: [RepoService],
+  // providers: [GithubService],
   styleUrls: ["./github.component.css"]
 })
 export class GithubComponent implements OnInit {
@@ -19,7 +19,10 @@ export class GithubComponent implements OnInit {
   ngOnInit() {
     interface ApiResponse {
       login: string;
-      avatar_url: string;
+      avatar_url: any;
+      public_repos: any;
+      followers: string;
+      following: string;
       repos_url: string;
     }
     this.http
@@ -31,7 +34,13 @@ export class GithubComponent implements OnInit {
         // for (let i = 0; i < data.data.length; i++) {
         //   this.github.push(data[i]);
         // }
-        this.github = new Github(data.login, data.avatar_url, data.repos_url);
+        this.github = new Github(
+          data.login,
+          data.avatar_url,
+          data.followers,
+          data.following,
+          data.repos_url
+        );
       });
   }
 }
